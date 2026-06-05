@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Нургали и Ксения | Свадьба</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#ffffff;
+    --text:#66704d;
+    --paper:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Cormorant Garamond', serif;
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+.container{
+    width:100%;
+    background:var(--bg);
+}
+
+.content{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    padding:0 30px 20px;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    min: height 800px;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: 50% center;
+    display:block;
+}
+
+/* PAPER BLOCK */
+
+.paper{
+    position:relative;
+    padding:60px 25px;
+    text-align:center;
+    margin:0;
+}
+
+
+
+h1{
+    font-family: "Comforter", cursive;
+    font-style: normal;
+    font-size:48px;
+    font-weight:500;
+    margin-bottom:18px;
+}
+
+.subtitle{
+    font-size:21px;
+    line-height:1.25;
+    margin-bottom:18px;
+}
+
+.text{
+    font-size:18px;
+    line-height:1.25;
+}
+
+.date{
+    font-family: "Comforter", cursive;
+    font-style: normal;
+    margin-top:20px;
+    font-size:38px;
+    font-weight:600;
+}
+
+/* TIMER */
+
+.timer-section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.timer-title{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.timer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.timer-box{
+    background:white;
+    padding:15px 5px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.timer-number{
+    font-size:52px;
+    font-weight:600;
+}
+
+.timer-label{
+    font-size:18px;
+}
+
+/* PHOTO */
+
+.photo{
+    width:100%;
+}
+
+.photo img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* LOCATION */
+
+.location{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.location h2{
+    font-family: "Comforter", cursive;
+    font-style: normal;
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.place{
+    font-size:38px;
+    font-weight:600;
+}
+
+.address{
+    font-size:28px;
+    margin-top:6px;
+}
+
+.guests{
+    margin-top:16px;
+    font-size:34px;
+    font-weight:500;
+}
+
+/* maps */
+
+.map-section{
+    padding:40px 20px 20px;
+    text-align:center;
+    background:#ffffff;
+}
+
+#map{
+    width:100%;
+    height:500px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* DRESS CODE */
+
+.dress{
+    text-align:center;
+    padding:40px 25px 60px;
+}
+
+.dress h2{
+    font-family: "Comforter", cursive;
+    font-style: normal;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.dress p{
+    font-size:18px;
+    line-height:1.25;
+}
+
+/* ANIMATION */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:none;
+}
+
+/* TABLET */
+
+
+
+/* DESKTOP */
+@media (max-width:768px){
+
+    .hero{
+        height:70vh;
+        min-height:480px;
+    }
+    
+    .paper{
+        padding: 0px 25px;
+    }
+}
+@media (min-width:1024px){
+
+.paper,
+.location,
+.dress,
+.timer-section{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+h1{
+    font-size:92px;
+}
+
+h2{
+    font-size:56px;
+    font-weight:500;
+}
+
+.subtitle{
+    font-size:32px;
+    line-height:1.4;
+}
+
+.text,
+.dress p{
+    font-size:26px;
+    line-height:1.5;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <section class="hero">
+        <img src="assets/hero.jpg" alt="Нургали и Ксения">
+    </section>
+
+    <section class="paper fade">
+        
+
+        <div class="content">
+
+            <h1>Нургали и Ксения</h1>
+    
+        </div>
+
+        <div class="subtitle">
+            Приглашаем вас на торжество любви и счастья —
+            нашу свадьбу!
+        </div>
+
+        <div class="text">
+            Дорогие друзья, мы хотим разделить этот важный день
+            нашей жизни с вами, нашими близкими и родными людьми.
+            <br><br>
+            Вместе мы создадим незабываемую атмосферу праздника,
+            наполненную радостью, теплом и любовью
+        </div>
+
+        <div class="date">
+            31.07.2026
+        </div>
+
+    </section>
+
+    <section class="timer-section fade">
+     <div class="content">
+
+        <div class="timer-title">
+            До свадьбы осталось
+        </div>
+
+        <div class="timer">
+
+            <div class="timer-box">
+                <div class="timer-number" id="days">0</div>
+                <div class="timer-label">дней</div>
+            </div>
+
+            <div class="timer-box">
+                <div class="timer-number" id="hours">0</div>
+                <div class="timer-label">часов</div>
+            </div>
+
+            <div class="timer-box">
+                <div class="timer-number" id="minutes">0</div>
+                <div class="timer-label">минут</div>
+            </div>
+
+            <div class="timer-box">
+                <div class="timer-number" id="seconds">0</div>
+                <div class="timer-label">секунд</div>
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+    <section class="photo fade">
+        <img src="assets/flower.jpg" alt="">
+    </section>
+
+    <section class="location fade">
+        <div class="content">
+
+        <h2>Место проведения</h2>
+
+        <div class="place">
+            Банкет Холл “Астана”
+        </div>
+
+        <div class="address">
+            г. Тюмень, ул. Народная, 43
+        </div>
+
+        <div class="guests">
+            Сбор гостей - 16:30
+        </div>
+    </div>
+    <section class="map-section fade">
+
+    <div id="map"></div>
+
+    </section>
+
+    </section>
+
+    <section class="photo fade">
+        <img src="assets/hall.jpg" alt="">
+    </section>
+
+    <section class="dress fade">
+        <div class="content">
+        <h2>Дресс-Код</h2>
+
+        <p>
+            Мы ждём и с нетерпением готовимся
+            к нашему незабываемому дню!
+            <br><br>
+
+            И поэтому решили отказаться от цветовой палитры,
+            которая будет ограничивать в выборе наших гостей.
+            Наденьте ваши любимые вечерние наряды!
+            <br><br>
+
+            СИЯЙТЕ! ТАНЦУЙТЕ! ВЕСЕЛИТЕСЬ!
+            <br>
+            Сделайте этот день незабываемым!
+        </p>
+    </div>
+
+    </section>
+
+</div>
+
+<script>
+
+/* TIMER */
+
+const weddingDate = new Date("July 31, 2026 16:00:00").getTime();
+
+function updateTimer(){
+
+    const now = new Date().getTime();
+
+    const distance = weddingDate - now;
+
+    if(distance < 0){
+        return;
+    }
+
+    const days =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours =
+        Math.floor((distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60));
+
+    const minutes =
+        Math.floor((distance % (1000 * 60 * 60))
+        / (1000 * 60));
+
+    const seconds =
+        Math.floor((distance % (1000 * 60))
+        / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+}
+
+updateTimer();
+setInterval(updateTimer,1000);
+
+/* SCROLL ANIMATION */
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+    observer.observe(el);
+});
+
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<script>
+
+ymaps.ready(init);
+
+function init() {
+
+    const map = new ymaps.Map("map", {
+        center: [57.095278, 65.604979],
+        zoom: 16,
+        controls: ['zoomControl']
+    });
+
+    const placemark = new ymaps.Placemark(
+        [57.095278, 65.604979],
+        {
+            balloonContent: `
+                <strong>Нургали и Ксения</strong><br>
+                Банкет Холл «Астана»
+            `
+        }
+    );
+
+    map.geoObjects.add(placemark);
+
+}
+
+</script>
+
+</body>
+</html>
